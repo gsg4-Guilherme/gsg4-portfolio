@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos - Guilherme</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #070d1b;
+      color: #e2e8f0;
+    }
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+  <nav class="bg-slate-900 text-gray-100 shadow-lg border-b border-slate-800 py-4">
+    <ul class="flex justify-center space-x-10 text-lg font-medium">
+      <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+      <li>
+        <a href="projetos.html" class="text-blue-400 border-b-2 border-blue-400 pb-1">Projetos</a>
+      </li>
+      <li><a href="certificados.html" class="hover:text-blue-400 transition">Certificados</a></li>
+    </ul>
+  </nav>
+
+  
+  <main class="flex-1 max-w-5xl mx-auto px-6 mt-12 fade-in">
+    <h1 class="text-4xl font-bold text-blue-400 text-center mb-12">Projetos</h1>
+
+    <div class="grid gap-10 md:grid-cols-2">
+
+      <div class="bg-slate-800 rounded-2xl p-7 shadow-md border border-slate-700
+                  hover:border-blue-500 hover:shadow-blue-500/20 transition transform hover:-translate-y-1">
+        <h2 class="text-2xl font-semibold text-white mb-3">CRUD_eventos</h2>
+
+        <p class="text-gray-400 leading-relaxed">
+          Aplicação simples de CRUD em <strong>Python</strong> para gerenciamento de eventos, criada para praticar lógica, organização de dados e manipulação de registros.
+
+        </p>
+
+        <a href="https://github.com/gsg4-Guilherme/CRUD_eventos_" target="_blank"
+           class="mt-4 inline-block text-blue-400 hover:text-blue-300 transition">
+          🔗 Ver projeto no GitHub
+        </a>
+      </div>
+      <div class="bg-slate-800 rounded-2xl p-7 shadow-md border border-slate-700
+                  hover:border-blue-500 hover:shadow-blue-500/20 transition transform hover:-translate-y-1">
+        <h2 class="text-2xl font-semibold text-white mb-3">Jogo Educativo de Mobilidade Urbana</h2>
+
+        <p class="text-gray-400 leading-relaxed">
+          Aplicação física interativa em <strong>Arduino</strong> sobre mobilidade urbana sustentável, onde dois jogadores respondem perguntas e avançam seus carrinhos conforme acertam as respostas.
+        </p>
+
+        <a href="https://www.linkedin.com/posts/guilherme-silva-guimaraes-859a21391_este-projeto-est%C3%A1-sendo-desenvolvido-para-activity-7403900025061322755-nMji?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGBv9YUBPcjl0Ts37-maBhDoCM69mpDFcjw"
+           target="_blank"
+           class="mt-4 inline-block text-blue-400 hover:text-blue-300 transition">
+          🔗 Ver projeto no LinkedIn
+        </a>
+      </div>
+
+    </div>
+    <button onclick="toggleTheme()" class="mt-4 px-4 py-2 bg-blue-500 rounded-lg">
+        Alternar Tema
+    </button>
+    <script src="script.js"></script>
+  </main>
+  <footer class="text-center text-gray-500 mt-16 mb-6 text-sm">
+    © 2025 Guilherme — Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
